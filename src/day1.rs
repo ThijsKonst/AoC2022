@@ -19,14 +19,7 @@ pub fn day1() {
             }
         }
     }
-    let mut top_three: Vec<u32> = vec![];
-    for _ in 0..3 {
-        match totals.pop() {
-            Some(x) => top_three.push(x),
-            None => println!("shit"),
-        }
-    }
-    let sum: u32 = top_three.iter().sum();
+    let sum: u32 = totals.iter().take(3).sum();
     println!("{:?}", sum);
 }
 
