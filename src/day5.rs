@@ -1,5 +1,10 @@
 use crate::utils::read_lines;
 
+#[test]
+fn test_part_1() {
+    assert_eq!(part1_fn("src/day5_test.txt"), "MCD");
+}
+
 fn part1_fn(path: &str) -> String {
     let mut init_part: Vec<String> = vec![];
     let mut init_state: Vec<Vec<char>> = vec![vec![]];
